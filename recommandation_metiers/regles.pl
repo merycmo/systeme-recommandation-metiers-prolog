@@ -29,7 +29,6 @@ metier_correspond_fortement(Metier, CompetencesUtilisateur) :-
 % =====================================================
 % RÈGLES DE RECOMMANDATION
 % =====================================================
-&
 % Recommander les métiers pour l'utilisateur
 recommander_metiers(CompetencesUtilisateur, MetiersRecommandes) :-
     findall(
