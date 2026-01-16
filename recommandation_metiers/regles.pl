@@ -25,7 +25,6 @@ metier_correspond(Metier, CompetencesUtilisateur) :-
 metier_correspond_fortement(Metier, CompetencesUtilisateur) :-
     score_correspondance(Metier, CompetencesUtilisateur, Score),
     Score >= 80.
-
 % =====================================================
 % RÈGLES DE RECOMMANDATION
 % =====================================================
