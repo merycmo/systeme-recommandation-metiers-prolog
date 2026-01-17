@@ -1,3 +1,4 @@
+
 :- dynamic competence/1.
 
 % -------------------------
@@ -103,3 +104,4 @@ formuler_question(physique, 'Avez-vous des connaissances en physique ?').
 formuler_question(recherche, 'Aimez-vous la recherche ?').
 formuler_question(selenium, 'Connaissez-vous Selenium ?').
 formuler_question(cisco, 'Connaissez-vous les technologies Cisco ?').
+
