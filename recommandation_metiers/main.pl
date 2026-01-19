@@ -1,18 +1,8 @@
-% =====================================================
-% MAIN.PL - Point d'entrée du Système Expert
-% =====================================================
-
-% Chargement des modules du projet
-:- consult('faits.pl').     % Base de connaissances 
-:- consult('questions.pl'). % Interaction 
-:- consult('regles.pl').    % Logique métier 
-:- consult('moteur.pl').    % Pilotage 
-
-% Commande principale de lancement : ?- start.
 start :-
     % Nettoyage des anciennes réponses en mémoire vive
     retractall(oui(_)),
     retractall(non(_)),
+    retractall(competence(_)),  % <-- AJOUTER CETTE LIGNE
     
     write('************************************************'), nl,
     write('*   BIENVENUE SUR L\'IA D\'ORIENTATION MASTER BD   *'), nl,
@@ -21,3 +11,4 @@ start :-
     
     % On lance l'exécution du moteur
     executer_moteur.
+
